@@ -16,6 +16,7 @@ define(['N/Search'],
                 columns: ['email']
             });
             alert(JSON.stringify(salesRepEmail));
+            //Note that alerts are a function of client scripts only and cannot be used in user event scripts.
         }
         return {
             fieldChanged: getSalesRepEmail
