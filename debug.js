@@ -49,6 +49,7 @@ require(['N/currentRecord', 'N/record'], function(currentRecord, record){
                     type: 'inventoryitem',
                     id: internalId,
                   });
+                  
                   var taxExempt = itemrecord.getValue({
                     fieldId: 'custitem_kdl_tax_exempt'
                   });
@@ -63,7 +64,7 @@ require(['N/currentRecord', 'N/record'], function(currentRecord, record){
                         });
                     }
                 }
-              }
+            }
         }
 
         try {

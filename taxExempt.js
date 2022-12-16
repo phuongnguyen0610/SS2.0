@@ -19,6 +19,7 @@ define([
         //     id: recordId,
         //     isDynamic: true //false
         //     });
+
             var newSalesOrder = context.newRecord;
             var salesOrderTransactionDate = newSalesOrder.getValue({
                 fieldId: 'trandate'
@@ -27,6 +28,7 @@ define([
                 title: 'salesOrderTransactionDate', 
                 details: salesOrderTransactionDate
             })
+            
         //load customer record
         var custId = newSalesOrder.getValue({
                         fieldId: 'entity'

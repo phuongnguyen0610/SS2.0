@@ -48,8 +48,8 @@ define(['N/record'],
                 value: 1
           });
           journalEntry.setCurrentSublistValue({
-                 sublistId: 'line',
-                 fieldId: 'memo',
+                sublistId: 'line',
+                fieldId: 'memo',
                 value: "Credit 1"
           });
           journalEntry.commitLine({

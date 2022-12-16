@@ -131,7 +131,7 @@ define(['N/Search', 'N/record', 'N/email', 'N/runtime', 'N/error'],
             invoice.save();
         }
 
-        function getInputDate(){
+        function getInputData(){
             return search.create({
                 type: record.Type.INVOICE, 
                 filters: [['status', search.Operator.IS, 'open']], 
@@ -189,7 +189,7 @@ define(['N/Search', 'N/record', 'N/email', 'N/runtime', 'N/error'],
         }
 
         return {
-            getInputDate: getInputDate, 
+            getInputData: getInputData, 
             map: map, 
             reduce: reduce, 
             summarize: summarize
